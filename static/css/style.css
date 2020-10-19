@@ -1,0 +1,86 @@
+*{
+  font-family: sans-serif;
+}
+
+body {
+  background: url('vintage-wallpaper.png');
+}
+
+
+/* body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} */
+
+footer {
+  color: rgb(27, 116, 148);
+}
+
+.prediction {
+  color: #e38c09;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #e38c09; 
+  border: none;
+  color: #10095c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 8px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.portfolioHeader {
+  background-color: rgba(34, 54, 133, 0.823);
+  width: 800px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  border: 10px solid rgb(243, 155, 23);
+  padding: 50px;
+  margin: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color:#e38c09;
+}
+
+.navbar-brand {
+  color: rgb(27, 116, 148);
+}
+
+.col-md-4 {
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+}
+
+.label {
+  background-color: #e38c09; 
+  border: none;
+  color: #10095c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 8px;
+  justify-content: flex-end;
+  display: flex;
+}
