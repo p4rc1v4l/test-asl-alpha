@@ -54,6 +54,9 @@
                         href="https://www.nad.org/resources/american-sign-language/#:~:text=The%20NAD%20recognizes%20that%20American,teaching%2C%20and%20interpreting%20of%20ASL."
                         target="_blank">Support </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1wjFW1xSoNgW_syT6R0siVDSjvLvkCedT/view?usp=sharing" target="_blank">Test Data</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -132,8 +135,8 @@
         function take_snapshot() {
             Webcam.snap(function (data_uri) {
                 document.getElementById('my_result').innerHTML = '<img src="' + data_uri + '"/>';
-                const predictURL = '/image'
-                const sendPkg = {
+                let predictURL = '/image'
+                let sendPkg = {
                     imgBase64: `${data_uri}`
                 };
 
@@ -151,12 +154,17 @@
                     console.log(`receive msg from server ${resp.response}`);
                     var response = resp.response;
                     document.getElementById('prediction').innerHTML = response;
+                    resp = null;
                 });
 
                 request.fail(function (jqXHR, textStatus) {
                     console.log(`Request failed: " + ${textStatus}`);
                 });
 
+                predictURL = null;
+                sendPkg = null;
+                request = null;
+                data_uri = null;
             });
         }
     </script>

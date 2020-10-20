@@ -2,6 +2,7 @@ import io
 import PIL
 import base64
 import numpy as np
+import gc
 
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
@@ -25,4 +26,7 @@ def predict(base64string):
 
     letter_predicted = prediction_labels[0]
     print(f'## Prediction from image received: {letter_predicted} ##')
+
+    gc.collect()
+
     return letter_predicted
