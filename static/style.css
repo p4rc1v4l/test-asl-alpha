@@ -1,0 +1,109 @@
+*{
+  font-family: sans-serif;
+}
+
+body {
+  background: url('vintage-wallpaper.png');
+  padding-top: 60px;
+}
+
+footer {
+  color: White
+}
+
+.prediction {
+  color: #e38c09;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.buttons {
+  background-color: #e38c09; 
+  border: none;
+  color: #10095c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 8px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.portfolioHeader {
+  background-color: rgba(71, 149, 221, 0.823);
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: justify;
+  border: 10px solid rgb(243, 155, 23);
+  padding: 50px;
+  margin: 15px;
+  border-radius: 8px;
+  display: flex;
+}
+
+h1 {
+  color:#e38c09;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255);
+}
+
+.col-md-4 {
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+}
+
+.label {
+  background-color: #e38c09; 
+  border: none;
+  color: #10095c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 8px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.navbar-brand {
+  text-align: right;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light {
+  background-color: #ffffff;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: white;
+  background-color: #e38c09;
+}
+
+.nav-item {
+  color: #e38c09;
+  font-weight: bold;
+}
+
+.img-large {
+  height: 500px;
+  width: 600px;
+  float: center;
+}
+p
+{color: white;}
+
+footer {
+  color: White
+}
