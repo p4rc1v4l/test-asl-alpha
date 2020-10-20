@@ -20,7 +20,7 @@ def predict(base64string):
     model = load_model('model_1.h5')
 
     predictions = model.predict(array_of_images_to_predict)
-    class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
+    class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     prediction_labels = class_names[np.argmax(predictions)]
 
     letter_predicted = prediction_labels[0]
